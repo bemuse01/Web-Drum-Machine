@@ -1,0 +1,53 @@
+@media screen and (orientation: portrait) and (max-width: 767px) and (min-width: 0px) and (max-aspect-ratio: 1 / 2){
+    html{
+        font-size: 5px;
+    }
+    div.delete *{
+        font-size: 2.5rem;
+    }
+    div.scores p{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 767px) and (min-width: 0px) and (min-aspect-ratio: 257 / 512){
+    html{
+        font-size: 6px;
+    }
+    div.delete *{
+        font-size: 2.5rem;
+    }
+    div.scores p{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 768px){
+    html{
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 0px){
+    html{
+        font-size: 9px;
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1342px) and (min-width: 1025px){ /* 1842 */
+    html{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+div#main-page{
+    --box-mobile-width: 100vw;
+    --box-mobile-height: 100vh;
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1024px){
+    /* main page box */
+    div#main-page-box-wrap{
+        width: var(--box-mobile-width);
+        height: var(--box-mobile-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px){
+    /* main page box */
+    div#main-page-box-wrap{
+        width: var(--box-mobile-width);
+        height: var(--box-mobile-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1342px){ /* 1842 */
+    /* main page box */
+    div#main-page-box-wrap{
+        width: var(--box-mobile-width);
+        height: var(--box-mobile-height);
+    }
+}

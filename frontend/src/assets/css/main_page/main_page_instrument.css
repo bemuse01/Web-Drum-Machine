@@ -1,0 +1,204 @@
+div.instrument{
+    --color: #ff921e;
+    --instrument-desktop-height: 95%;
+
+    --button-desktop-size: 65px;
+
+    --instrument-container-long-width: 96%;
+    --instrument-container-short-width: 96%;
+
+    --button-container-long-width: 100%;
+    --button-container-short-width: 100%;
+
+    --panel-wrap-long-width: 100%;
+    --panel-wrap-short-width: 100%;
+
+    color: var(--color);
+}
+
+
+
+
+/* instrument */
+div.instrument{
+    top: 50%;
+    left: 50%;
+    height: var(--instrument-desktop-height);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s;
+}
+div.instrument > div{
+    float: left;
+}
+div.instrument-container{
+    position: absolute;
+}
+div.panel-container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    overflow: auto;
+}
+div.button-container{
+    bottom: 0;
+    left: 0;
+    height: var(--button-desktop-size);
+    transition: width 0.3s;
+}
+
+/* icon */
+div.icon-element{
+    position: sticky;
+    left: 0;
+}
+
+/* panel */
+div.instrument-element{
+    border-radius: 5px;
+}
+div.instrument-panel-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    transition: width 0.3s;
+}
+div.instrument-panel{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+div.instrument-panel:last-child{
+    margin-bottom: 0;
+}
+div.instrument-element-wrap{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+div.instrument-element-wrap > div{
+    margin: 5px;
+    flex: 1 0 auto;
+    height: auto;
+}
+div.instrument-element-wrap > div:first-child{
+    margin-left: 0;
+}
+div.instrument-element-wrap > div:before{
+    content:'';
+    float: left;
+    padding-top: 100%;
+}
+div.panel-element{
+    background: rgba(147, 177, 195, 0.8);
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.35);
+}
+div.panel-element:nth-child(n + 6):nth-child(-n + 9){
+    background: rgba(180, 180, 190, 0.8);
+}
+div.panel-element:nth-child(n + 14):nth-child(-n + 17){
+    background: rgba(180, 180, 190, 0.8);
+}
+
+/* progress */
+div.progress-element:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+div.panel-element:last-child, div.progress-element:last-child{
+    margin-right: 0;
+}
+
+/* button */
+div.button-container{
+    overflow-x: auto;
+}
+div.instrument-button-wrap{
+    overflow: auto;
+}
+div.instrument-button{
+    position: relative;
+    top: 0;
+    width: var(--button-desktop-size);
+    height: var(--button-desktop-size);
+    border-radius: 8px;
+    background: rgba(56, 56, 56, 1);
+    transition: filter 0.2s;
+    margin-right: 1vh;
+    float: left;
+}
+div.instrument-button:hover{
+    filter: invert(1);
+}
+div.instrument-button:nth-child(4):hover{
+    filter: none;
+}
+div.instrument-button > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5vh;
+    height: 5vh;
+}
+
+/* bpm button */
+div.bpm-button{
+    width: calc(var(--button-desktop-size) * 2);
+    background: none;
+}
+div.bpm-button > div{
+    top: 0;
+    transform: none;
+    width: calc(var(--button-desktop-size) - 0.27vh);
+    height: var(--button-desktop-size);
+    font-size: 2vh;
+    border-radius: 8px;
+}
+
+/* bpm number */
+div.bpm-button > div:nth-child(1){
+    left: 0;
+    background: rgba(56, 56, 56, 1);
+    text-align: center;
+    transition: filter 0.2s;
+}
+div.bpm-button > div:nth-child(1):hover{
+    filter: invert(1);
+}
+div.bpm-button > div:nth-child(1) > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* bpm control */
+div.bpm-button > div:nth-child(2){
+    right: 0;
+    left: initial;
+}
+div.bpm-button > div:nth-child(2) > div{
+    position: relative;
+    width: calc(var(--button-desktop-size) / 2 - 0.5vh);
+    height: var(--button-desktop-size);
+    float: left;
+    margin-right: 0.5vh;
+    border-radius: 8px;
+    transition: filter 0.2s;
+    background: url('../../src/image/etc/bpm-up.png') no-repeat center center / cover;
+}
+div.bpm-button > div:nth-child(2) > div:hover{
+    filter: invert(1);
+}
+div.bpm-button > div:nth-child(2) > div:last-child{
+    background: url('../../src/image/etc/bpm-down.png') no-repeat center center / cover;
+    margin-right: 0;
+}
+
+/* side menu button */
+div.side-menu-button{
+    float: right;
+    margin-right: 0;
+}

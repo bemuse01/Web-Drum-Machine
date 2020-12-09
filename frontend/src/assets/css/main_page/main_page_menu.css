@@ -1,0 +1,193 @@
+div.menu{
+    --menu-desktop-width: 100%;
+    --menu-desktop-height: 100%;
+
+    --menu-container-wrap-desktop-long-width: 25%;
+    --menu-container-wrap-desktop-short-width: 35%;
+
+    --menu-container-wrap-desktop-height: 100%;
+
+    --menu-container-box-desktop-width: 94%;
+    --menu-container-box-desktop-height: 97%;
+
+    --menu-hide-desktop-size: 40px;
+
+    --menu-button-desktop-size: 50px;
+
+    --set-menu-desktop-width: 90%;
+    --set-menu-desktop-height: 82%;
+}
+div.menu select{
+    appearance: none;
+    width: 125px;
+    height: 30px;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--color);
+    color: var(--color);
+}
+
+
+
+
+div.menu{
+    top: 0;
+    left: 0;
+    width: var(--menu-desktop-width);
+    height: var(--menu-desktop-height);
+}
+div.menu-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--menu-desktop-width);
+    height: var(--menu-desktop-height);
+}
+div.menu-container-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: var(--menu-container-wrap-desktop-long-width); */
+    height: var(--menu-container-wrap-desktop-height);
+    background: rgba(0, 0, 0, 0.85);
+    transition: width 0.3s;
+}
+div.menu-container-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--menu-container-box-desktop-width);
+    height: var(--menu-container-box-desktop-height);
+}
+
+/* menu-hide */
+div.menu-hide{
+    position: relative;
+    float: right;
+    width: var(--menu-hide-desktop-size);
+    height: var(--menu-hide-desktop-size);
+}
+div.menu-hide > div{
+    width: var(--menu-hide-desktop-size);
+    height: var(--menu-hide-desktop-size);
+    background: url('../../src/image/etc/menu-hide.png') no-repeat center center / cover;
+}
+
+/* account menu container */
+div.account-menu-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: var(--menu-desktop-width);
+    height: var(--menu-button-desktop-size);
+}
+
+/* account menu button */
+div.account-menu-button{
+    position: relative;
+    width: var(--menu-button-desktop-size);
+    height: var(--menu-button-desktop-size);
+    float: left;
+    margin-right: 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+div.account-menu-button:hover{
+    background: black;
+    filter: invert(1);
+}
+div.account-menu-button:last-child{
+    margin-right: 0;
+}
+div.account-menu-button > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* logout button */
+div.logout-button > div{
+    background: url('../../src/image/etc/logout.png') no-repeat center center / cover;
+}
+
+/* save button */
+div.save-button > div{
+    background: url('../../src/image/etc/save.png') no-repeat center center / cover;
+}
+
+/* delete button */
+div.delete-button > div{
+    background: url('../../src/image/etc/delete.png') no-repeat center center / cover;
+}
+
+/* set menu container */
+div.set-menu-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--set-menu-desktop-width);
+    height: var(--set-menu-desktop-height);
+    overflow: auto;
+    font-size: 25px;
+}
+
+/* set menu button */
+div.set-menu-button{
+    position: relative;
+    width: var(--menu-desktop-width);
+    height: var(--menu-button-desktop-size);
+    float: left;
+    margin-bottom: 10px;
+}
+div.set-menu-button span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+div.set-menu-button select{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+div.set-menu-button input{
+    display: none;
+}
+div.set-menu-button label{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 100px;
+    height: 30px;
+    background: rgba(255, 146, 30, 0.15);
+    border-radius: 4px;
+}
+
+/* select beat button */
+div.select-beat-button label > div{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(255, 146, 30);
+    transition: transform 0.3s;
+    border-radius: 4px;
+}
+div.select-beat-button label > div > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}

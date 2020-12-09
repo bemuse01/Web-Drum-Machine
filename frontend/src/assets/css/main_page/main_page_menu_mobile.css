@@ -1,0 +1,470 @@
+div.menu{
+    --menu-container-wrap-mobile-portrait-big-width: 75%;
+    --menu-container-wrap-mobile-portrait-small-width: 60%;
+
+    --menu-container-wrap-mobile-landscape-big-width: 35%;
+    --menu-container-wrap-mobile-landscape-small-width: 30%;
+    --menu-container-wrap-mobile-landscape-long-width: 25%;
+    --menu-container-wrap-mobile-height: 100%;
+    
+    --menu-hide-mobile-portrait-size: 5vh;
+    --menu-hide-mobile-landscape-size: 7vh;
+
+    --menu-button-mobile-portrait-size: 6vh;
+    --menu-button-mobile-landscape-size: 8vh;
+
+    --menu-button-margin: 1vh;
+
+    --menu-mobile-portrait-font-big-size: 3vh;
+    --menu-mobile-portrait-font-small-size: 2.6vh;
+
+    --menu-mobile-landscape-font-big-size: 4vh;
+    --menu-mobile-landscape-font-small-size: 3.6vh;
+    --menu-mobile-landscape-font-long-size: 4.4vh;
+
+    --menu-mobile-select-width: 42%;
+    --menu-mobile-select-portrait-height: 60%;
+    --menu-mobile-select-landscape-height: 70%;
+
+    --menu-mobile-switch-width: 35%;
+    --menu-mobile-swtich-portrait-height: 50%;
+    --menu-mobile-swtich-landscape-height: 60%;
+
+    --select-beat-mobile-portrait-font: 2.5vh;
+    --select-beat-mobile-landscape-font: 3.2vh;
+}
+
+
+
+
+/* PORTRAIT */
+
+/* PORTRAIT ratio <= 0.5 */
+@media screen and (max-aspect-ratio: 1 / 2){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-portrait-height);
+        font-size: var(--menu-mobile-portrait-font-small-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-portrait-big-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-portrait-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-portrait-size);
+        height: var(--menu-button-mobile-portrait-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-portrait-font-small-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-portrait-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-portrait-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-portrait-font);
+    }
+}
+
+
+
+
+/* PORTRAIT ratio > 0.5 */
+@media screen and (orientation: portrait) and (max-width: 767px) and (min-width: 0px) and (min-aspect-ratio: 257 / 512){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-portrait-height);
+        font-size: var(--menu-mobile-portrait-font-small-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-portrait-small-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-portrait-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-portrait-size);
+        height: var(--menu-button-mobile-portrait-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-portrait-font-small-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-portrait-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-portrait-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-portrait-font);
+    }
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 768px) and (min-aspect-ratio: 257 / 512){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-portrait-height);
+        font-size: var(--menu-mobile-portrait-font-big-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-portrait-small-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-portrait-size);
+        height: var(--menu-hide-mobile-portrait-size);
+    }
+    
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-portrait-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-portrait-size);
+        height: var(--menu-button-mobile-portrait-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-portrait-font-big-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-portrait-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-portrait-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-portrait-font);
+    }
+}
+
+
+
+
+/* LANDSCAPE */
+
+/* LANDSCAPE ratio >= 2.0 */
+@media screen and (max-width: 1342px) and (min-aspect-ratio: 2 / 1){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-landscape-height);
+        font-size: 4.4vh;
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-landscape-long-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-landscape-size);
+        height: var(--menu-button-mobile-landscape-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-landscape-font-long-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-landscape-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-landscape-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-landscape-font);
+    }
+}
+
+
+
+
+/* LANDSCAPE ratio < 2.0 */
+@media screen and (orientation: landscape) and (max-width: 767px) and (min-width: 0px) and (max-aspect-ratio: 512 / 257){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-landscape-height);
+        font-size: var(--menu-mobile-landscape-font-big-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-landscape-big-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-landscape-size);
+        height: var(--menu-button-mobile-landscape-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-landscape-font-big-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-landscape-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-landscape-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-landscape-font);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 768px) and (max-aspect-ratio: 512 / 257){
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-landscape-height);
+        font-size: var(--menu-mobile-landscape-font-small-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-landscape-big-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-landscape-size);
+        height: var(--menu-button-mobile-landscape-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-landscape-font-small-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-landscape-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-landscape-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-landscape-font);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1342px) and (min-width: 1025px) and (max-aspect-ratio: 512 / 257){ /* 1842 */
+    div.menu select{
+        width: var(--menu-mobile-select-width);
+        height: var(--menu-mobile-select-landscape-height);
+        font-size: var(--menu-mobile-landscape-font-small-size);
+    }
+
+
+
+
+    div.menu-container-wrap{
+        width: var(--menu-container-wrap-mobile-landscape-big-width);
+        height: var(--menu-container-wrap-mobile-height);
+    }
+
+    /* menu hide */
+    div.menu-hide{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+    div.menu-hide > div{
+        width: var(--menu-hide-mobile-landscape-size);
+        height: var(--menu-hide-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-container{
+        height: var(--menu-button-mobile-landscape-size);
+    }
+
+    /* account menu button */
+    div.account-menu-button{
+        width: var(--menu-button-mobile-landscape-size);
+        height: var(--menu-button-mobile-landscape-size);
+        margin-right: var(--menu-button-margin);
+    }
+
+    /* set menu container */
+    div.set-menu-container{
+        font-size: var(--menu-mobile-landscape-font-small-size);
+    }
+
+    /* set menu button */
+    div.set-menu-button{
+        height: var(--menu-button-mobile-landscape-size);
+        margin-bottom: var(--menu-button-margin);
+    }
+    div.set-menu-button label{
+        width: var(--menu-mobile-switch-width);
+        height: var(--menu-mobile-swtich-landscape-height);
+    }
+
+    /* select beat button */
+    div.select-beat-button label > div > span{
+        font-size: var(--select-beat-mobile-landscape-font);
+    }
+}

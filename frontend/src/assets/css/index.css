@@ -1,0 +1,96 @@
+@font-face{
+    src: url('../src/font/WorkSans-ExtraLight.ttf');
+    font-family: workSansExtraLight;
+}
+@font-face{
+    src: url('../src/font/WorkSans-Light.ttf');
+    font-family: workSansLight;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: workSansLight;
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow: hidden;
+    background: black;
+}
+div#wrap{
+    background: url('../src/image/bg/main_background.jpg') no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+/* transition */
+
+/* router transition */
+.router-transition-enter-active{
+    transition: all 0.8s;
+}
+.router-transition-leave-active{
+    transition: all 0.8s;
+}
+.router-transition-enter{
+    transform: translate(0, -10%);
+    opacity: 0;
+}
+.router-transition-leave-to{
+    transform: translate(0, 10%);
+    opacity: 0;
+}
+
+/* account transition */
+.account-transition-enter-active{
+    transition: all 0.8s;
+}
+.account-transition-leave-active{
+    transition: all 0.8s;
+}
+.account-transition-enter{
+    transform: translate(0, 10%);
+    opacity: 0;
+}
+.account-transition-leave-to{
+    transform: translate(0, -10%);
+    opacity: 0;
+}
+
+/* main menu transition */
+.main-menu-transition-enter-active{
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.main-menu-transition-leave-active{
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.main-menu-transition-enter{
+    transform: translate(10%, 0);
+    opacity: 0;
+}
+.main-menu-transition-leave-to{
+    transform: translate(10%, 0);
+    opacity: 0;
+}
+
+/* save transition */
+.save-transition-enter-active{
+    transition: all 0.3s;
+}
+.save-transition-leave-active{
+    transition: all 0.3s;
+}
+.save-transition-enter{
+    opacity: 0;
+}
+.save-transition-leave-to{
+    opacity: 0;
+}

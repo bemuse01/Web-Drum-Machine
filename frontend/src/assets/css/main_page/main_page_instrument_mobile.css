@@ -1,0 +1,433 @@
+div.instrument{
+    --instrument-mobile-portrait-width: 88%;
+    --instrument-mobile-landscape-width: 94%;
+
+    --instrument-mobile-height: 92%;
+    --instrument-mobile-portrait-container-height: 90%;
+    --instrument-mobile-landscape-container-height: 85%;
+
+    --panel-wrap-portrait-width: 270vw;
+    --panel-wrap-portrait-short-width: 200vw;
+    --panel-wrap-landscape-width: 116vw;
+
+    --pad-mobile-portrait-margin: 0.6vh;
+    --pad-mobile-landscape-margin: 0.8vh;
+
+    --button-mobile-portrait-height: 7vh;
+    --button-mobile-landscape-height: 9vh;
+
+    --play-button-mobile-portrait-size: 5vh;
+    --play-button-mobile-landscape-size: 7vh;
+
+    --bpm-button-mobile-gap: 0.27vh;
+
+    --button-mobile-landscape-long-height: 11vh;
+
+    --play-button-mobile-landscape-long-size: 9vh;
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1024px) and (max-aspect-ratio: 1 / 2){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-portrait-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-portrait-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-portrait-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-portrait-margin);
+    }
+
+
+    /* button */
+    div.instrument-button-wrap{
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button{
+        width: var(--button-mobile-portrait-height);
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-portrait-size);
+        height: var(--play-button-mobile-portrait-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-portrait-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-portrait-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-portrait-height) / 2 - 0.5vh);
+        height: var(--button-mobile-portrait-height);
+    }
+}
+
+
+
+@media screen and (orientation: portrait) and (max-width: 539px) and (min-width: 0px) and (min-aspect-ratio: 257 / 512){
+    /* main box */
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-portrait-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-portrait-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-portrait-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-portrait-margin);
+    }
+
+
+    /* button */
+    div.instrument-button-wrap{
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button{
+        width: var(--button-mobile-portrait-height);
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-portrait-size);
+        height: var(--play-button-mobile-portrait-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-portrait-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-portrait-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-portrait-height) / 2 - 0.5vh);
+        height: var(--button-mobile-portrait-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 540px) and (min-aspect-ratio: 257 / 512){
+    /* main box */
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-portrait-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-portrait-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-portrait-short-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-portrait-margin);
+    }
+
+
+    /* button */
+    div.instrument-button-wrap{
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button{
+        width: var(--button-mobile-portrait-height);
+        height: var(--button-mobile-portrait-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-portrait-size);
+        height: var(--play-button-mobile-portrait-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-portrait-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-portrait-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-portrait-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-portrait-height) / 2 - 0.5vh);
+        height: var(--button-mobile-portrait-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 0px){
+    /* main box */
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-landscape-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-landscape-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-landscape-height);
+    }
+    
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-landscape-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-landscape-margin);
+    }
+
+    /* button */
+    div.instrument-button{
+        width: var(--button-mobile-landscape-height);
+        height: var(--button-mobile-landscape-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-landscape-size);
+        height: var(--play-button-mobile-landscape-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-landscape-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-landscape-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-landscape-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-landscape-height) / 2 - 0.5vh);
+        height: var(--button-mobile-landscape-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 0px) and (min-aspect-ratio: 2 / 1){
+    /* main box */
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-landscape-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-landscape-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-landscape-long-height);
+    }
+    
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-landscape-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-landscape-margin);
+    }
+
+    /* button */
+    div.instrument-button{
+        width: var(--button-mobile-landscape-long-height);
+        height: var(--button-mobile-landscape-long-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-landscape-long-size);
+        height: var(--play-button-mobile-landscape-long-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-landscape-long-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-landscape-long-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-landscape-long-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-landscape-long-height) / 2 - 0.5vh);
+        height: var(--button-mobile-landscape-long-height);
+    }
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1342px) and (min-width: 1025px){ /* 1842 */
+    /* main box */
+    ::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background: transparent; 
+    }
+    ::-webkit-scrollbar-thumb{
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background: rgba(255, 255, 255, 0.8);
+    }
+    ::-webkit-scrollbar-button{
+        background: transparent;
+        display: none;
+    }
+    ::-webkit-scrollbar-corner{
+        display: none;
+    }
+
+
+
+
+    /* component instrument */
+    div.instrument{
+        width: var(--instrument-mobile-landscape-width);
+        height: var(--instrument-mobile-height);
+    }
+    div.panel-container{
+        height: var(--instrument-mobile-landscape-container-height);
+    }
+    div.button-container{
+        width: 100%;
+        height: var(--button-mobile-landscape-height);
+    }
+
+    /* icon */
+
+    /* panel */
+    div.instrument-panel-wrap{
+        width: var(--panel-wrap-landscape-width);
+    }
+    div.instrument-element-wrap > div{
+        margin: var(--pad-mobile-landscape-margin);
+    }
+
+    /* button */
+    div.instrument-button{
+        width: var(--button-mobile-landscape-height);
+        height: var(--button-mobile-landscape-height);
+    }
+    div.instrument-button > div{
+        width: var(--play-button-mobile-landscape-size);
+        height: var(--play-button-mobile-landscape-size);
+    }
+
+    /* bpm button */
+
+    /* bpm number */
+    div.bpm-button{
+        width: calc(var(--button-mobile-landscape-height) * 2);
+    }
+    div.bpm-button > div{
+        width: calc(var(--button-mobile-landscape-height) - var(--bpm-button-mobile-gap));
+        height: var(--button-mobile-landscape-height);
+    }
+
+    /* bpm control */
+    div.bpm-button > div:nth-child(2) > div{
+        width: calc(var(--button-mobile-landscape-height) / 2 - 0.5vh);
+        height: var(--button-mobile-landscape-height);
+    }
+}

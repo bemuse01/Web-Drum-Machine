@@ -1,0 +1,118 @@
+div.save{
+    --save-width: 100%;
+    --save-height: 100%;
+    --save-container-width: 30rem;
+    --save-container-height: auto;
+}
+
+
+
+
+/* save input */
+
+/* save input text */
+div.save input[type=text]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ff8300;
+    padding-bottom: 2px;
+    width: var(--save-container-width);
+    height: 4rem;
+    background: none;
+    font-size: 2rem;
+    transition: background 0.15s;
+    letter-spacing: 1px;
+    color: #ff921e;
+}
+div.save input[type=text]:focus{
+    outline: none;
+}
+div.save input::placeholder{
+    color: rgba(255, 146, 30, 0.6);
+}
+
+/* save input button */
+div.save input[type=button]{
+    outline: none;
+    background: none;
+    border: 1px solid #ff8300;
+    width: 14.5rem;
+    height: 4rem;
+    color: #ff921e;
+    font-size: 2rem;
+    transition: all 0.2s;
+}
+div.save input[type=button]:hover:enabled{
+    background: rgba(255, 146, 30, 0.5);
+    color: white;
+}
+div.save input[type=button]:focus{
+    outline: none;
+}
+div.save input[type=button]:disabled{
+    opacity: 0.5;
+}
+
+
+
+
+/* save component */
+div.save{
+    top: 0;
+    left: 0;
+    width: var(--save-width);
+    height: var(--save-height);
+}
+
+/* save overlay */
+div.save-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--save-width);
+    height: var(--save-height);
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* save container */
+div.save-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--save-container-width);
+    height: var(--save-container-height);
+}
+div.save-text{
+    position: relative;
+    width: var(--save-container-width);
+    height: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* save title */
+div.save-title{
+    font-size: 5rem;
+}
+
+/* save alert */
+div.save-alert{
+    font-size: 2rem;
+    transition: height 0.2s;
+    margin-bottom: 0;
+}
+
+/* save input */
+div.save-input{
+    margin-bottom: 2rem;
+}
+
+div.save-button input{
+    margin-right: 1rem;
+    border-radius: 4px;
+}
+div.save-button input:last-child{
+    margin-right: 0;
+}

@@ -1,0 +1,169 @@
+div.delete{
+    --delete-width: 100%;
+    --delete-height: 100%;
+    --delete-container-width: 50rem;
+    --delete-container-height: 80%;
+    --delete-container-input-width: 35rem;
+}
+div.delete *{
+    font-size: 2rem;
+}
+
+
+
+
+/* delete input */
+
+/* delete input text */
+div.delete input[type=text]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.1rem solid #ff8300;
+    padding-bottom: 0.5rem;
+    width: var(--delete-container-input-width);
+    /* height: 3.7rem; */
+    background: none;
+    /* font-size: 2rem; */
+    transition: background 0.15s;
+    letter-spacing: 1px;
+    color: #ff921e;
+}
+div.delete input[type=text]:focus{
+    outline: none;
+}
+div.delete input::placeholder{
+    color: rgba(255, 146, 30, 0.6);
+}
+
+/* delete input button */
+div.delete input[type=button]{
+    outline: none;
+    background: none;
+    border: 1px solid #ff8300;
+    width: 14rem;
+    height: 4rem;
+    color: #ff921e;
+    /* font-size: 2rem; */
+    transition: all 0.2s;
+}
+div.delete input[type=button]:hover:enabled{
+    background: rgba(255, 146, 30, 0.5);
+    color: white;
+}
+div.delete input[type=button]:focus{
+    outline: none;
+}
+div.delete input[type=button]:disabled{
+    opacity: 0.5;
+}
+
+
+
+
+/* delete component */
+div.delete{
+    top: 0;
+    left: 0;
+    width: var(--delete-width);
+    height: var(--delete-height);
+}
+
+/* delete overlay */
+div.delete-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--delete-width);
+    height: var(--delete-height);
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* delete container */
+div.delete-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--delete-container-width);
+    height: var(--delete-container-height);
+}
+
+/* delete search */
+div.delete-search{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+}
+div.delete-search input{
+    position: absolute;
+    bottom: 0;
+}
+div.delete-search input[type=text]{
+    left: 0;
+}
+div.delete-search input[type=button]{
+    right: 0;
+}
+
+/* delete selected number */
+div.delete-selected-number{
+    position: relative;
+    width: 100%;
+    /* font-size: 2rem; */
+    transition: height 0.3s;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* delete alert */
+div.delete-alert{
+    /* font-size: 2rem; */
+    transition: height 0.2s;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* delete score list */
+div.delete-score-list{
+    position: relative;
+    width: 100%;
+    height: 86%;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* delete scores */
+div.scores{
+    width: 100%;
+    height: auto;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid #ff8300;
+    transition: background 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 2rem;
+}
+div.scores input{
+    display: none;
+}
+div.scores input:checked + label{
+    /* box-shadow: inset 0 0 0 6px white; */
+    background: #ff830066;
+}
+div.scores label{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div.scores:hover{
+    background: #ff830033;
+}
+div.scores p{
+    font-size: 1.7rem;
+    padding: 0.3rem 0 0.3rem 0.3rem;
+}
