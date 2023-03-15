@@ -8,4 +8,4 @@ npm install <br />
 npm start
 
 ### main pads
-![Alt text](./pads.png?raw=true "Title")
+![Alt text](./pads.png?raw=true "main pads")
