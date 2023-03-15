@@ -145,7 +145,7 @@ div.input-box-text input{
 /* next page */
 div.account-next-page{
     position: absolute;
-    bottom: 27px;
+    bottom: 48px;
     width: var(--input-desktop-width);
 }
 div.account-next-page span{
@@ -173,7 +173,13 @@ div.input-box-button input{
     margin-bottom: 0;
 }
 div.signin-next-page{
-    text-align: right;
+    display: flex;
+}
+div.signin-next-page span{
+    position: absolute;
+}
+div.signin-next-page .to-main{
+    right: 0;
 }
 /* account component signup */
 div.signup-button{

@@ -21,6 +21,7 @@
         </div>
         <div class="account-next-page signin-next-page">
             <span @click="changeToSignup">Sign up</span>
+            <span @click="moveToMain" class="to-main">As a Guest</span>
         </div>
     </div>
 </template>
@@ -82,7 +83,16 @@ export default {
 
 
 
-
+        // to main
+        moveToMain(){
+            axios.get('/api/drum/main')
+            .then(res => {
+                this.resultByThen(res.data)
+            })
+            .catch(err => {
+                this.createErrorByCatch()
+            })
+        },
         // post signin info
         executeSignin(){
             const form = this.appendData()

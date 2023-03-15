@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const express = require('express')
 const session = require('express-session')
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const multer = require('multer')
 
 const upload = multer()
@@ -18,33 +18,34 @@ app.use(session({
 }))
 app.use(router)
 
-mongoose.Promise = global.Promise
-mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
+// mongoose.Promise = global.Promise
+// mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 
-const OjbectId = mongoose.Types.ObjectId
+// const OjbectId = mongoose.Types.ObjectId
 const user_model = require('../models/user/user_model')
 const beat_model = require('../models/beat/beat_model')
 
 router.get('/', (req, res, next) => {
-    user_model.redirectBySession(req, res)
+    // user_model.redirectBySession(req, res)
 })
 router.get('/main', (req, res, next) => {
-    user_model.redirectBySession(req, res)
+    // user_model.redirectBySession(req, res)
+    res.send({success: true, data: 'work'})
 })
 router.post('/signin', (req, res, next) => {
-    user_model.signin(req, res)
+    // user_model.signin(req, res)
 })
 router.post('/signup', (req, res, next) => {
-    user_model.signup(req, res)
+    // user_model.signup(req, res)
 })
 router.get('/logout', (req, res, next) => {
-    user_model.logout(req, res)
+    // user_model.logout(req, res)
 })
 router.post('/savebeat', (req, res, next) => {
-    beat_model.insertBeat(req, res)
+    // beat_model.insertBeat(req, res)
 })
 router.post('/deleteScore', upload.none(), (req, res, next) => {
-    beat_model.deleteScore(req, res, OjbectId)
+    // beat_model.deleteScore(req, res, OjbectId)
 })
 
 module.exports = app
