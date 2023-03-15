@@ -1,10 +1,10 @@
 # Web-Drum-Machine
  
-## project setup
+### project setup
 cd backend <br />
 npm install <br />
 
-## project start
+### project start
 npm start
 
 
